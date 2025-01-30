@@ -94,4 +94,9 @@ EOF'
 # Restart Caddy to apply the configuration
 systemctl restart caddy
 
+pm2 startup
+pm2 start foundry
+pm2 save
+
+pm2 status
 echo "FoundryVTT setup complete! Please access your instance online here: https://${FOUNDRY_HOSTNAME} or locally here: localhost:$FOUNDRY_PORT"
