@@ -27,7 +27,7 @@ FOUNDRY_PM2_NAME="foundry"
 FOUNDRY_USER="foundry"
 
 # Prompt for FoundryVTT download URL
-read -p 'Enter the FoundryVTT download URL: ' FOUNDRY_URL
+read -p 'Enter the FoundryVTT download URL: ' FOUNDRY_URL < /dev/tty
 
 echo "Installing"
 
