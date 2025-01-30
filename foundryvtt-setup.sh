@@ -81,7 +81,7 @@ sleep 3
 pm2 stop $FOUNDRY_PM2_NAME
 
 # Configure Caddy for HTTPS proxying
-bash -c 'cat >> /etc/caddy/Caddyfile <<EOF
+bash -c 'cat <<EOF > /etc/caddy/Caddyfile
 ${FOUNDRY_HOSTNAME} {
   @http {
     protocol http
