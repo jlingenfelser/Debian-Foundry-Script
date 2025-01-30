@@ -29,7 +29,7 @@ FOUNDRY_USER="foundry"
 # Prompt for FoundryVTT download URL
 read -p 'Enter the FoundryVTT download URL: ' FOUNDRY_URL
 
-echo "Setting up first install..."
+echo "Installing"
 
 # Setup Node prerequisites
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
