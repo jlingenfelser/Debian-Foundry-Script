@@ -12,19 +12,19 @@ apt update
 apt install -y caddy
 
 # FoundryVTT download URL
-FOUNDRY_URL=""
+export FOUNDRY_URL=""
 # Your desired hostname for Foundry example="foundry.example.com" default=""
-FOUNDRY_HOSTNAME="vtt.saltmarsh.dev"
+export FOUNDRY_HOSTNAME="vtt.saltmarsh.dev"
 # Location to save FoundryVTT app default="/opt/foundryvtt"
-FOUNDRY_APP_DIR="/opt/foundryvtt"
+export FOUNDRY_APP_DIR="/opt/foundryvtt"
 # Location to save FoundryVTT data default="/opt/foundrydata"
-FOUNDRY_DATA_DIR="/opt/foundrydata"
+export FOUNDRY_DATA_DIR="/opt/foundrydata"
 # Port number for FoundryVTT default="30000" increment by 1 for additional instances
-FOUNDRY_PORT="30000"
+export FOUNDRY_PORT="30000"
 # Name for PM2 for daemon management default="foundry"
-FOUNDRY_PM2_NAME="foundry"
+export FOUNDRY_PM2_NAME="foundry"
 # Username of non-root user to manage Foundry default="foundry"
-FOUNDRY_USER="foundry"
+export FOUNDRY_USER="foundry"
 
 # Prompt for FoundryVTT download URL
 read -p 'Enter the FoundryVTT download URL: ' FOUNDRY_URL < /dev/tty
